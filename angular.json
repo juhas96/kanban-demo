@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fireship-trello-clone"
+    }
+  },
+  "defaultProject": "fireship-trello-clone",
+  "cli": {
+    "analytics": "64e319b2-3bb4-4f84-924b-acb08028e8ab"
+  }
 }
