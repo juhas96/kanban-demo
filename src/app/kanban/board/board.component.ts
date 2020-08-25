@@ -14,7 +14,6 @@ export class BoardComponent implements OnInit {
   @Input() board: Board;
 
   constructor(private boardService: BoardService,
-              private dialogRef: MatDialogRef<TaskDialogComponent>,
               private dialog: MatDialog) { }
 
   taskDrop(event: CdkDragDrop<string[]>): void {
@@ -45,6 +44,10 @@ export class BoardComponent implements OnInit {
         }
       }
     });
+  }
+
+  handleDelete(): void {
+    this.boardService.deleteBoard(this.board.id);
   }
 
   ngOnInit(): void {
